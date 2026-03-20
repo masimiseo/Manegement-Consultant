@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # 🚨 [아주 중요] 다시 한번, 본인의 API 키를 꼭 아래 따옴표 안에 넣으세요!
-API_KEY = "AIzaSyB4d5n0gcv-meIPiqasU8reJxoVoH_oit4"
+API_KEY = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=API_KEY)
 
 # AI 모델 설정
