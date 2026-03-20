@@ -6,7 +6,7 @@ API_KEY = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=API_KEY)
 
 # AI 모델 설정
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-1.5-flash')
 # 앱 화면 전체 디자인 세팅
 st.set_page_config(page_title="경영지도사 합격 루틴", page_icon="📈")
 st.title("📈 경영지도사 2차 마케팅 완벽 루틴 앱")
